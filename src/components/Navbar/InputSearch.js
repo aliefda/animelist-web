@@ -10,9 +10,13 @@ const InputSearch = () => {
 
     const handleSearch = (event) => {
         event.preventDefault()
-        const keyword = searchRef.current.value
+        const keyword = searchRef.current.value.trim()
 
-        router.push(`/search/${keyword}`)
+        if (keyword) {
+            router.push(`/search/${keyword}`)
+        } else {
+            console.log("Input kosong, tidak dapat melakukan pencarian.")
+        }
     }
 
     const handleKeyDown = (event) => {
