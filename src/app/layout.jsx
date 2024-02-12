@@ -2,10 +2,10 @@ import { Gabarito } from "next/font/google";
 import "@/app/globals.css";
 import Navbar from "@/components/Navbar";
 
-const gabarito = Gabarito({ subsets: ["latin"] });
+const gabarito = Gabarito({ subsets: ['latin'] });
 
 export const metadata = {
-  title: "AnimeList",
+  title: "ANIMEX",
   description: "Website Anime Indo",
 };
 
